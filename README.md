@@ -84,6 +84,14 @@ curl "https://content.guardianapis.com/search?q=coronavirus&show-fields=body&api
 curl "https://content.guardianapis.com/world/2021/mar/22/link-between-diabetes-and-coronavirus-infections?show-fields=body&api-key=API_KEY"
 ```
 
+#### Example request data
+
+[Mock Data](./mockNewsData.json) - contains a request to the Guardian API with fields selected that will help you with the challenge.  The actual request made was to:
+
+https://content.guardianapis.com/search?order-by=newest&show-fields=byline%2Cthumbnail%2Cheadline%2CbodyText&api-key=INSERT_YOUR_KEY_HERE
+
+You will need to replace `INSERT_YOUR_KEY_HERE` with your own Guardian API key.  Use this data whilst developing, serving it from `json-server` - it will help on the request rate limit in the API.
+
 ### Aylien text summarisation API example
 
 **Please stub your tests to avoid exceeding the API rate limit**
