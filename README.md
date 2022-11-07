@@ -92,7 +92,7 @@ https://content.guardianapis.com/search?order-by=newest&show-fields=byline%2Cthu
 
 You will need to replace `INSERT_YOUR_KEY_HERE` with your own Guardian API key.  Use this data whilst developing, serving it from `json-server` - it will help on the request rate limit in the API.
 
-### Aylien text summarisation API example
+<!-- ### Aylien text summarisation API example
 
 **Please stub your tests to avoid exceeding the API rate limit**
 
@@ -103,11 +103,12 @@ curl "https://api.aylien.com/api/v1/summarize?url=http://worrydream.com/MediaFor
   -H "X-AYLIEN-TextAPI-Application-ID: APPLICATION_ID" \
   -H "X-AYLIEN-TextAPI-Application-Key: SECRET_APPLICATION_KEY"
 ```
+-->
 
 ## Resources
 
 * [Guardian newspaper API homepage](http://open-platform.theguardian.com/documentation/)
-* [Aylien text summary API docs](http://docs.aylien.com/docs/summarize)
+<!-- * [Aylien text summary API docs](http://docs.aylien.com/docs/summarize) -->
 * cURL [man page](https://curl.haxx.se/docs/manpage.html)
 * [Hurl](https://www.hurl.it/), a web interface for sending HTTP requests
 
