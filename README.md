@@ -45,11 +45,11 @@ Just in case my laptop breaks
 I can read the site comfortably on my phone
 ```
 
-```
+<!-- ```
 As a busy politician
 To make my news reading more fun
 I can see whizzy animations in the app
-```
+``` -->
 
 ## Mockups
 
