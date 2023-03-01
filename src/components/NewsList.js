@@ -25,10 +25,11 @@ const NewsList = () => {
     return (
         <div>{
 
-            articles.map(({ id, webTitle, webUrl, fields: { thumbnail } }) => (
+            articles.map(({ id, webTitle, webUrl, fields: { thumbnail }, sectionName }) => (
                 <NewsItem
                     key={id}
                     webTitle={webTitle}
+                    sectionName={sectionName}
                     webUrl={webUrl}
                     thumbnail={thumbnail} />
             ))
