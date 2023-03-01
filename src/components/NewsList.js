@@ -11,26 +11,28 @@ const NewsList = () => {
             const res = await Axios.get(
                 `http://localhost:3000/response`
             );
+            console.dir(res);
+            setArticles(res.data.results);
 
-            //setArticles(res.response.results);
-            //console.dir(res.response.results);
-            console.dir(res.data);
+            //console.dir(res.data);
         }
 
 
 
         getArticles();
-    });
+    }, []);
 
     return (
-        <div>
-            {articles.map(({ title, description, url, imgUrl }) => (
+        <div>{
+
+            articles.map(({ id, webTitle, webUrl, fields: { thumbnail } }) => (
                 <NewsItem
-                    title={title}
-                    description={description}
-                    url={url}
-                    imgUrl={imgUrl} />
-            ))}
+                    key={id}
+                    webTitle={webTitle}
+                    webUrl={webUrl}
+                    thumbnail={thumbnail} />
+            ))
+        }
         </div>
     );
 };

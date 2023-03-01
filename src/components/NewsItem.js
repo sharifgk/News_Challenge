@@ -1,15 +1,15 @@
 import React from 'react'
 
-const NewsItem = ({ title, description, url, imgUrl }) => {
+const NewsItem = ({ webTitle, webUrl, thumbnail }) => {
     return (
         <div>
-            <img src={imgUrl} alt='News Image' />
+            <img src={thumbnail} alt='News Image' />
 
             <h3>
-                <a href={url}>{title}</a>
+                <a href={webUrl}>{webTitle}</a>
             </h3>
 
-            <p>{description}</p>
+            <p>bop</p>
         </div>
     )
 }
