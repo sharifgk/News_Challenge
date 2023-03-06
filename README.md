@@ -146,4 +146,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-<img src="https://github.com/sharifgk/news-summary-challenge/blob/main/reactappvid.gif" width="50%" height="50%"/>
+<img src="https://github.com/sharifgk/news-summary-challenge/blob/main/reactappvid.gif" width="100%" height="100%"/>
