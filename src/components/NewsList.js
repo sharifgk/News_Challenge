@@ -8,11 +8,9 @@ const NewsList = () => {
 
     useEffect(() => {
         const getArticles = async () => {
-            const res = await Axios.get(
-                `http://localhost:3000/response`
-            );
+            const res = await Axios.get(process.env.REACT_APP_GUARDIAN_API);
             console.dir(res);
-            setArticles(res.data.results);
+            setArticles(res.data.response.results);
 
             //console.dir(res.data);
         }
